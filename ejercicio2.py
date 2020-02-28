@@ -15,7 +15,7 @@ def cantidadVocales(cadena):
             con1 = con1 + 1
         if ((i ==  'e') or i ==  'E'   ):
             con2 = con2 + 1
-        if ((i ==  'i') or i ==  'I'   ):
+        if ((i ==  'i') or (i ==  'I'   ):
             con3 = con3 + 1
 
         if ((i ==  'o') or i ==  'O'   ):

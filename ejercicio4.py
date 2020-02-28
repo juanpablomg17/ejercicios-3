@@ -4,7 +4,7 @@ def lista():
     datos= []
     unico=[]
     repetidos=[]
-    comparacion=[]
+   
 
     for i in range(5):
         valor = int(input("dame un numero"))
@@ -20,8 +20,23 @@ def lista():
             
             
 
+    
+
+
+    for i in unico:
+        if i in repetidos:
+            unico.remove(i)
+
     print(f"repetidos: {repetidos}")
     print(f"unico: {unico}")
+    
+
+
+    
+
+
+
+    
 
 
 
