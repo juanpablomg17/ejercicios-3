@@ -5,9 +5,10 @@ def lista():
     unico=[]
     repetidos=[]
    
+    n = int(input("de qué tamaño desea su lista de números? "))
 
-    for i in range(5):
-        valor = int(input("dame un numero"))
+    for i in range(n):
+        valor = int(input("dame un numero: "))
         datos.append(valor)
 
     
@@ -33,12 +34,6 @@ def lista():
 
 
     
-
-
-
-    
-
-
 
 
 lista()
