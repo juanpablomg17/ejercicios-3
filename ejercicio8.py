@@ -39,4 +39,24 @@ def Nprimos():
     print(f"Los primeros {dato} numeros primos son: {primos}")
 
 
-Nprimos()
+def correr():
+    
+   correcto = False
+   while(not correcto):
+       try:
+            print("Menú. \n 1. imprimir una lista de la serie fibonacci hasta n numeros \n 2. imprimir una lista de n numeros primos ")
+            op = int(input(""))
+
+            if (op == 1):
+                serieFibonacci()
+            if (op ==2):
+                Nprimos()
+            else:
+                 print("Opción inválida")
+            
+            correcto = True
+       except ValueError:
+          print("Error, la cantidad ingresada debe ser de tipo numética")
+
+
+correr()
