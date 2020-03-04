@@ -20,46 +20,24 @@ def serieFibonacci():
         f"Los primeros {n} numeros de la serie fibonacci son: {numerosfibonacci}")
 
 
-# def Nprimos():
-#     primos = []
-#     dato = int(input("digite el tope o tamaño de su lista"))
-#     j = 2
-#     while j < dato:
-#         creciente = 2
-#         esprimo = True
-#         while esprimo and creciente < j:
-#             if j % creciente == 0:
-#                 esprimo = False
-#             else:
-#                 creciente = creciente + 1
-#             if esprimo:
-#                 primos.append(j)
-#                 j = j +1
-
-#     print(f"Los primeros {dato} numeros primos son: {primos}")
-
 def Nprimos():
-    comp = True
     primos = []
-    dato = int(input("digite el tope o tamaño de su lista"))
-
-    if dato > 0:
-        comp = False
-        i = 2
-        while i < dato:
-            creciente = 2
-            esPrimo = True
-
-            while esPrimo and creciente < i:
-                if i % creciente == 0:
-                    esPrimo = False
-                else:
-                    creciente += 1
-            if esPrimo:
-                primos.append(i)
-            i+=1
-        print(f"Los primeros {dato} numeros primos son: {primos}")
-
+    dato = int(input("Digite la cantidad de numeros primos que desea: "))
+    j = 2
+    i = 1
+    while dato >= i:
+        creciente = 2
+        esprimo = True
+        while esprimo and creciente < j:
+            if j % creciente == 0:
+                esprimo = False
+            else:
+                creciente = creciente + 1
+        if esprimo:
+            primos.append(j)
+            i = i + 1
+        j = j + 1
+    print(f"Los primeros {dato} numeros primos son: {primos}")
 
 def correr():
 
@@ -79,6 +57,5 @@ def correr():
             correcto = True
         except ValueError:
             print("Error, la cantidad ingresada debe ser de tipo numética")
-
 
 correr()
