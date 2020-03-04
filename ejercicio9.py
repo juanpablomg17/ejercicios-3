@@ -16,8 +16,6 @@ def ejercicio9():
                 lista1.append(i+1)
             else:
                 lista1.append(i-1)
-    
-
         print(lista1)
 
     else:
